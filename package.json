@@ -1,0 +1,35 @@
+{
+  "name": "att-frontend-assignment",
+  "version": "1.0.0",
+  "description": "Event Wall is a real-time display solution that takes the last message. It was implemented as a script which automatically fetches new messages and adds them to the beginning of the container (prepend).\r Messages which should be added have next structure:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/panshadow/att-frontend-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/panshadow/att-frontend-assignment/issues"
+  },
+  "homepage": "https://github.com/panshadow/att-frontend-assignment#readme",
+
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-jshint": "^2.0.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.1.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "jshint": "^2.9.4",
+    "jshint-stylish": "^2.2.1"
+  }
+}
