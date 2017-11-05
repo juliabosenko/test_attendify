@@ -1,13 +1,11 @@
 // General variables ----
-//$default-fonts  : 'Playfair Display', serif;
-$title-fonts  : 'Playfair Display', serif;
-$base-font-name : 'Roboto', sans-serif;
+$base-font-name : sans-serif;
 // ----------------------
 
 
 // Fonts family variables
 $base-font-size   : 62.5%; // 10px
-$base-font-family : $base-font-name, $title-fonts !default;
+$base-font-family : $base-font-name !default;
 
 // Typography -----------
 @function line_height($lh, $fs) { // lh - line-height, fs - font-size
