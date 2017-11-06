@@ -1,7 +1,21 @@
+.container, .container-full {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
 html,
 body {
   margin: 0;
   padding: 0; }
+
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table; }
+
+.clearfix::after {
+  clear: both; }
 
 .post .time {
   text-overflow: ellipsis;
@@ -203,6 +217,80 @@ body {
       font-size: 1.6rem;
       line-height: 1.375; } }
 
+.container, .container-full {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+
+html,
+body {
+  margin: 0;
+  padding: 0; }
+
+.clearfix::before, .clearfix::after {
+  content: ' ';
+  display: table; }
+
+.clearfix::after {
+  clear: both; }
+
+.post .time {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden; }
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 100%; } }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 80rem; } }
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 102rem; } }
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 116rem; } }
+
+.row {
+  display: flex;
+  flex: 0 1 auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem; }
+  .row-reverse {
+    flex-direction: row-reverse; }
+
+.col {
+  display: flex;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; }
+  .col-reverse {
+    flex-direction: column-reverse; }
+
+@media (max-width: 479px) {
+  .container {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem; }
+    .container-full {
+      padding-right: 1.2rem;
+      padding-left: 1.2rem; }
+  .row {
+    margin-right: -1.2rem;
+    margin-left: -1.2rem; }
+  .col {
+    padding-right: 1.2rem;
+    padding-left: 1.2rem; } }
+
 html {
   position: relative;
   height: 100%;
@@ -214,13 +302,7 @@ html {
 .wrapper {
   width: 100%;
   min-height: 100%;
-  padding: 0 1.5rem;
   background-color: #edeef0; }
-
-@media (min-width: 544px) {
-  .wrapper {
-    display: grid;
-    padding: 0 2.4rem; } }
 
 .post {
   display: inline-block;
@@ -269,26 +351,27 @@ html {
       border-radius: .7rem;
       transition: background-color ease .5s; }
 
-@media (min-width: 544px) {
+@media (min-width: 480px) and (max-width: 768px) {
   [data-wall="attendify"] {
     column-count: 2;
     column-gap: 2rem;
-    column-fill: initial; }
-  .post {
-    margin-bottom: 2.4rem;
-    padding: 2.4rem; }
-  header {
-    margin-bottom: 2.4rem; }
-    header .photo {
-      margin-right: 1.6rem; } }
+    column-fill: initial; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   [data-wall="attendify"] {
     column-count: 3;
     column-gap: 2.4rem; }
-  .post header > div {
-    margin-right: 1.6rem; }
-  .post .time {
-    max-width: 10rem; } }
+  .post {
+    max-width: 36rem;
+    margin-bottom: 2.4rem;
+    padding: 2.4rem; }
+    .post header {
+      margin-bottom: 2.4rem; }
+      .post header > div {
+        margin-right: 1.6rem; }
+      .post header .photo {
+        margin-right: 1.6rem; }
+    .post .time {
+      max-width: 10rem; } }
 
 /*# sourceMappingURL=main.css.map */

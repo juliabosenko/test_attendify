@@ -2,7 +2,7 @@
 
 AttendifyEventWall.startWall();
 
-document.addEventListener('click',function(e){
+document.addEventListener('dblclick',function(e){
 	if(e.target && e.target.classList.contains("text"))
 	{
 		var parent = e.target.parentNode;
@@ -10,4 +10,3 @@ document.addEventListener('click',function(e){
 		AttendifyEventWall.toggleBanMessage(id);
 	}
 });
-

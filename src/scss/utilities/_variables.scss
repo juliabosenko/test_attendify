@@ -3,7 +3,7 @@ $num-cols     : 12 !default;
 $gutter-width : 3rem !default; // 30px
 
 $screen-breakpoints : (
-    small  : 544px,
+    small  : 480px,
     medium : 768px,
     large  : 1024px,
     xlarge : 1200px
@@ -12,7 +12,7 @@ $screen-breakpoints : (
 $small-container    : 100%;
 $medium-container   : 80rem;
 $large-container    : 102rem;
-$xlarge-container   : 120rem;
+$xlarge-container   : 116rem;
 
 $small-screen       : map_get($screen-breakpoints, 'small');
 $medium-screen      : map_get($screen-breakpoints, 'medium');
